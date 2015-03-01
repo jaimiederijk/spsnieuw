@@ -11,7 +11,7 @@ Template.gameItem.helpers({
 	 			{ _id:this._id,value:"steen",value2:"schaar" },
 	 			{_id:this._id, value:"schaar",value2:"papier" } 
  			]} ).count()>0) {
- 			return "player one wins"
+ 			return this.author+" wins"
  		}
  		else if (Game.find({ 
  			$or: [ 
@@ -19,7 +19,7 @@ Template.gameItem.helpers({
 	 			{ _id:this._id,value2:"steen",value:"schaar" },
 	 			{_id:this._id, value2:"schaar",value:"papier" } 
  			]} ).count()>0) {
- 			return "player two wins"
+ 			return this.challenger+" wins"
  		} else if (Game.find({ 
  			$or: [ 
 	 			{_id:this._id, value2:"steen",value:"steen"},
