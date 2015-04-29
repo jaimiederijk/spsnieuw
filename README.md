@@ -1,5 +1,5 @@
 # spsnieuw
-steen papier schaar multiplayer
+stone paper scissors multiplayer
 
 Gebruikers kunnen met deze app een potje steen papier schaar spelen met andere gebruikers. 
 
